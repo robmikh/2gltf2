@@ -93,4 +93,4 @@ for current_argument in sys.argv:
 
     export_file = current_directory + "/" + current_basename + ".gltf"
     print("Writing: '" + export_file + "'")
-    bpy.ops.export_scene.gltf(filepath=export_file)
+    bpy.ops.export_scene.gltf(filepath=export_file, export_format='GLTF_EMBEDDED')

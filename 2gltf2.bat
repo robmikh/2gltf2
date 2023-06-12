@@ -2,7 +2,7 @@ ECHO OFF
 
 IF "%1"=="" GOTO USAGE
 
-"C:/Program Files/Blender Foundation/Blender 3.5/blender.exe" -b -P 2gltf2.py -- %1
+"C:/Program Files/Blender Foundation/Blender 3.5/blender.exe" -b -P %~dp02gltf2.py -- %*
 GOTO END
 
 :USAGE
